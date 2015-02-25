@@ -4,7 +4,6 @@
 require 'rubygems'
 require 'sinatra'
 
-#server side
 set :sessions, true
 
 BLACKJACK_AMOUNT = 21
@@ -124,8 +123,6 @@ post '/bet' do
   end
 end 
 
-
-
 get '/game' do
   session[:turn] = session[:player_name]
   #set up initial game values
@@ -206,4 +203,3 @@ end
 get '/game_over' do
   erb :game_over
 end 
-
