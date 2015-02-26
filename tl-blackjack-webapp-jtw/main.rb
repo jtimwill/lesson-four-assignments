@@ -4,7 +4,10 @@
 require 'rubygems'
 require 'sinatra'
 
-set :sessions, true
+Chrome fix: (erase line 4)
+use Rack::Session::Cookie, :key => 'rack.session',
+                           :path => '/',
+                           :secret => 'your_secret' 
 
 BLACKJACK_AMOUNT = 21
 DEALER_MIN_HIT = 17
