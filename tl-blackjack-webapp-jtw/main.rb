@@ -4,7 +4,6 @@
 require 'rubygems'
 require 'sinatra'
 
-Chrome fix: (erase line 4)
 use Rack::Session::Cookie, :key => 'rack.session',
                            :path => '/',
                            :secret => 'your_secret' 
